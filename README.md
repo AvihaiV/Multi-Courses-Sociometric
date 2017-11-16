@@ -31,7 +31,8 @@ Please visit our wiki for furthur project info:
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
 
-### Iteration Pages
+### Diary
+- Diary containing inputs that we learnt and had during our project meetings.
 
 
 
