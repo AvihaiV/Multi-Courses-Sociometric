@@ -1,6 +1,6 @@
 # Multi-Courses-Sociometric
 
-Helping the Alumni of HaYerushalmit stay in touch with one another.
+Building Data Base based on Sociometric score to find sutable position for solider in the army.
 <br />
 <br />
 <img src="https://github.com/AvihaiV/Multi-Courses-Sociometric/blob/master/Material/Pics/Application%20screenshots/Multi%20Courses%20Sociometric%20-%20Logo.jpeg" width="25%"></img>
