@@ -1,4 +1,4 @@
-# Tene-Yerushalmi
+# Multi-Courses-Sociometric
 
 Helping the Alumni of HaYerushalmit stay in touch with one another.
 <br />
