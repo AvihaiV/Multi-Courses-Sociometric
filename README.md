@@ -26,7 +26,7 @@ Please visit our wiki for furthur project info:
 
 
 ### Project Documents
-- [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
+- [Proposal Form](https://github.com/AvihaiV/Multi-Courses-Sociometric/wiki/Proposal-Form)
 - [Project Inception](../../wiki/inception)
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
