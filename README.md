@@ -3,7 +3,7 @@
 Helping the Alumni of HaYerushalmit stay in touch with one another.
 <br />
 <br />
-<img src="https://cloud.githubusercontent.com/assets/26036841/23697291/e8d7c412-03ef-11e7-97e6-f4363c0060a2.jpg" width="25%"></img>
+<img src="https://github.com/AvihaiV/Multi-Courses-Sociometric/blob/master/Material/Pics/Application%20screenshots/Multi%20Courses%20Sociometric%20-%20Logo.jpeg" width="25%"></img>
 <br />
 <br />
 
