@@ -22,7 +22,7 @@ Helping the Alumni of HaYerushalmit stay in touch with one another.
 ## Disclaimer
 This appliction is being developed as part of 4th year final project at the software engeneering department at [Azrieli College of Engineering, Jerusalem, Israel.](http://english.jce.ac.il/)
 
-Please visit our wiki for furthur project info: 
+Please visit our [Wiki](https://github.com/AvihaiV/Multi-Courses-Sociometric/wiki) for furthur project info: 
 
 
 ### Project Documents
