@@ -32,7 +32,7 @@ Please visit our wiki for furthur project info:
 - [Software Design Specification](../../wiki/sds)
 
 ### Diary
-- Diary containing inputs that we learnt and had during our project meetings.
+- [Diary](https://calendar.google.com/calendar/r/agenda/2017/6/1) containing inputs that we learnt and had during our project meetings.
 
 
 
