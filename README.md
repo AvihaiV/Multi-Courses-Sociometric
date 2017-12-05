@@ -32,7 +32,7 @@ Please visit our [Wiki](https://github.com/AvihaiV/Multi-Courses-Sociometric/wik
 - [Software Design Specification](../../wiki/sds)
 
 ### Diary
-- [Diary](https://calendar.google.com/calendar/r/agenda/2017/6/1) containing inputs that we learnt and had during our project meetings.
+- [Diary](https://github.com/AvihaiV/Multi-Courses-Sociometric/wiki/Project-Diary) containing inputs that we learnt and had during our project meetings.
 
 
 
