@@ -1,0 +1,89 @@
+body{
+    font-family: Arial;
+    background-color: #a9c5f2;
+}
+
+h1{
+    font-family: 'Shuneet', serif;
+    font-size: 50px;
+    direction: initial;
+}
+
+h2{
+    font-family: 'Shuneet', serif;
+    font-size: xx-large;
+}
+
+header{
+    height: 100px;
+    background: linear-gradient(to right, white, #338aa0);
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 1px;
+    border-radius:10px;
+}
+
+.left{
+
+    width :55%;
+    height: 100px;
+    padding-top: 2px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    display: inline-block;
+    float: left;
+    margin:1px;
+}
+
+.right{
+    width : 35%;
+    height: 100px;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    display: inline-block;
+    float: right;
+    margin:1px;
+}
+
+nav{
+    clear:both;
+    height: 80px;
+    background-color:#dfe4fb;
+    margin-right:1px;
+}
+
+.box1,.box2,.box3,.box4{
+    direction: rtl;
+    height: 70px;
+    width : 22.7%;
+    background-color:#a9c5f2;
+    border-color:black;
+    text-align:center;
+
+}
+
+.box4{
+    margin-left:50px;
+    display: inline-block;
+    float: left;
+
+}
+.box3{
+    display: inline-block;
+    float: left;
+
+}
+
+.box2{
+    display: inline-block;
+    float: left;
+
+
+}
+
+.box1{
+    display: inline-block;
+    float: left;
+
+}
