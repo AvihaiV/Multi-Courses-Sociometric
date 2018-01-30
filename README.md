@@ -13,9 +13,12 @@ Building Data Base based on Sociometric score to find sutable position for solid
 |Category|Status|
 |---|---|
 | Version Control System| git & github |
+| License | [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)| 
 | Recommended IDE | [WebStorm](https://www.jetbrains.com/webstorm/) |
 | Group Chat | [![Join the chat at https://gitter.im/jce-il/project-template](https://badges.gitter.im/jce-il/project-template.svg)](https://gitter.im/jce-il/Multi-Courses-Sociometric) |
 | Github Issues | [![GitHub issues](https://img.shields.io/github/issues/AvihaiV/Multi-Courses-Sociometric.svg?style=flat)](https://github.com/AvihaiV/Multi-Courses-Sociometric/issues) |
+| Hit Counter | [![HitCount](http://hits.dwyl.io/AvihaiV/Multi-Courses-Sociometric.svg)](http://hits.dwyl.io/AvihaiV/Multi-Courses-Sociometric) |
+
 
 
 
