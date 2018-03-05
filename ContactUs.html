@@ -66,25 +66,26 @@
 </nav>
 
 
-<div class="container">
-    <form action="action_page.php">
+<div class="cform cform02">
+    <div class="inner">
+        <h3>יצירת קשר</h3>
 
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+        <div class="">
+            <form action="process-form.php" method="post" id="form">
+                <input type="text" id="name" name="name" placeholder="השם שלך" />
+                <input type="text" id="email" name="email" placeholder="האימייל שלך" />
+                <input type="text" id="topic" name="topic" placeholder="הטלפון שלך" />
+                <textarea id="comments" name="comments" cols="1" rows="3" placeholder="גוף ההודעה"></textarea>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
-
-        <label for="country">Country</label>
-        <input type="text" id="country" name="country" placeholder="Your Country..">
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-
-    </form>
+                <div class="buttons">
+                    <a href="#" class="link1 brad5" onclick="document.getElementById('form').submit()"><em><b>שליחה</b></em></a>
+                    <div class="fix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
+
 
 
 
