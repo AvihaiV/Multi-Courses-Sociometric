@@ -1,4 +1,5 @@
 
+
 var pNumbers= [];
 var grades= [];
 var sum=0;
@@ -39,6 +40,13 @@ function calcGrade()
     document.getElementById("calculation").innerHTML = text;
 
 }
+
+function outputData() {
+
+    alert ("hello")
+
+}
+
 
 
 
