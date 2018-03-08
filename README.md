@@ -33,7 +33,7 @@ Please visit our [Wiki](https://github.com/AvihaiV/Multi-Courses-Sociometric/wik
 
 ### Project Documents
 - [Proposal Form](https://github.com/AvihaiV/Multi-Courses-Sociometric/blob/master/Material/Forms/%D7%98%D7%95%D7%A4%D7%A1%20%D7%94%D7%A6%D7%A2%D7%94%20-%20%D7%A1%D7%95%D7%A6%D7%99%D7%95%D7%9E%D7%98%D7%A8%D7%99%20%D7%9E%D7%A8%D7%95%D7%91%D7%94%20%D7%A7%D7%95%D7%A8%D7%A1%D7%99%D7%9D%20.pdf)
-- [Alpha Version](../../wiki/inception)
+- [Alpha Version](https://github.com/AvihaiV/Multi-Courses-Sociometric/blob/master/Material/Forms/טופס%20גרסת%20אלפא%20-%20סוציומטרי%20מרובה%20קורסים.pdf)
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
 
