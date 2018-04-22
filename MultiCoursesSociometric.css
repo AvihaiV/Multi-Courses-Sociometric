@@ -1,7 +1,9 @@
 body {
-	font-family: Arial;
-	background: #a9c5f2;
+	font-family: 'Shuneet', serif;
+	background: #ffffcc;
 	text-align: right;
+    font-weight: bold;
+    font-size: medium;
 }
 
 h3 {
@@ -13,18 +15,18 @@ th, td {
 }
 
 #title {
-	background: #fff;
-	background: linear-gradient(to right, rgba(51, 138, 160, 0),
-		rgba(51, 138, 160, 1));
+	background: #B3CF60;
+	/*background: linear-gradient(to right, rgb(134, 179, 0),
+		rgba(134, 179, 0,0));*/
 }
 
 
 table tr:first-child {
-	background: #a2a2a2;
+	background: #77773c;
 	font-weight:bold;
 }
 #nav-bar {
-	background: #a9c5e2;
+	background: #CFCF60;
 	margin-bottom: 25px;
 }
 .page-header{
@@ -39,17 +41,24 @@ table tr:first-child {
 /* 	padding-right: 5px;
     padding-left: 5px; */
 }
+#text{
+    float:right;
+    font-family: 'Shuneet', serif;
+    font-size: 17px;
+    font-weight: bold;
 
+}
 
 #stage {
-    margin: 1em auto;
+    margin: 1em;
     width: 500px;
     height: 292px;
+    float:left;
 }
 
 #stage a {
     position: absolute;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 
