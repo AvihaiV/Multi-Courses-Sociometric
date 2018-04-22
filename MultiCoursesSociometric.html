@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Multi Course Sociometric</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href='http://serve.fontsproject.com/css?family=Shuneet:400'
+	rel='stylesheet' type='text/css'>
+<script src="lib/browser/neo4j-web.min.js"></script>
+<script src="MultiCoursesSociometric.js"></script>
+<link rel="stylesheet" type="text/css" href="ContactUs.css" />
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body dir="rtl">
+
+	<div class="container">
+		<div class="page-header well well-lg h2" id="title">
+			<span>Multi Course Sociometric</span>
+		</div>
+
+		<ul class="nav nav-tabs nav-pills nav-justified" id="nav-bar">
+			<li class="active"><a data-toggle="tab" href="#home">דף הבית</a></li>
+			<li><a data-toggle="tab" href="#input">הזנת נתונים</a></li>
+			<li><a data-toggle="tab" href="#output">שליפת נתונים</a></li>
+			<li><a data-toggle="tab" href="#about">אודות</a></li>
+			<li><a data-toggle="tab" href="#contact">צור קשר</a></li>
+		</ul>
+
+		<div class="tab-content">
+
+			<div id="home" class="tab-pane fade in  active">
+                <div id="stage">
+                    <a href="images/pic1.jpg"><img src="images/pic1.jpg" width="500" height="400"></a>
+                    <a href="images/pic2.jpg"><img src="images/pic2.jpg" width="500" height="400"></a>
+                    <a href="images/pic3.jpg"><img src="images/pic3.jpg" width="500" height="400"></a>
+                    <a href="images/pic4.jpg"><img src="images/pic4.jpg" width="500" height="400"></a>
+                    <a href="images/pic5.jpg"><img src="images/pic5.jpg" width="500" height="400"></a>
+
+                </div>
+            </div>
+
+			<div id="contact" class="tab-pane fade">
+				<h3>צור קשר</h3>
+				<div class="cform cform02">
+					<div class="inner">
+						<h3>יצירת קשר</h3>
+
+						<div class="">
+							<form action="process-form.php" method="post" id="form">
+								<input type="text" id="name" name="name" placeholder="השם שלך" />
+								<input type="text" id="email" name="email"
+									placeholder="האימייל שלך" /> <input type="text" id="topic"
+									name="topic" placeholder="הטלפון שלך" />
+								<textarea id="comments" name="comments" cols="1" rows="3"
+									placeholder="גוף ההודעה"></textarea>
+
+								<div class="buttons">
+									<a href="#" class="link1 brad5"
+										onclick="document.getElementById('form').submit()"><em><b>שליחה</b></em></a>
+									<div class="fix"></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="about" class="tab-pane fade">
+				<h3>אודות</h3>
+				<blockquote class="blockquote-reverse">
+					<p>Please add details here</p>
+					<footer>From Avihai</footer>
+				</blockquote>
+			</div>
+
+			<div id="output" class="tab-pane fade">
+				<h3>Output</h3>
+				<div class="d-block pull-right">
+					<div class="col-lg-12">
+						<h4 class="text-info pull-right">סנן לפי:</h4>
+					</div>
+					<div class="form-inline" action="">
+						<div class="form-group">
+							<label for="personalNumber">מספר אישי:</label> <input
+								class="form-control" id="perNumOut" type="text"
+								name="personalNumber" placeholder='הכנס מספר אישי'>
+						</div>
+						<div class="form-group">
+							<label for="courseNumber">מספר קורס:</label> <input
+								class="form-control" id="courNumOut" type="text"
+								name="courseNumber" placeholder='הכנס מספר קורס'>
+						</div>
+						<div class="form-group">
+							<label for="mySelect">ציון:</label> <select class="form-control"
+								id="mySelect">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option SELECTED="SELECTED">הכול</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default"
+							onclick="outputData()" value="Filter">סנן</button>
+					</div>
+				</div>
+				<div class="col-lg-6 pull-right" id="table">
+					<table class="table table-striped table-bordered">
+						<tbody id="outputTable">
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+
+			<div id="input" class="tab-pane fade">
+				<h3>הזנת נתונים</h3>
+				<div class="col-md-12  pull-right">
+					<div class="d-block container col-md-4 pull-right">
+						<h4 class="text-info">הכנס נתונים עבור החייל שברצונך לדרג:</h4>
+						<div class="form-inline" action="">
+							<div class="form-group form-inline">
+								<label class="control-label" for="personalNumber">מספר
+									אישי:</label>
+                                <span style="display:inline-block; width: 1px;"></span>
+
+                                <input id="personalNum" type="text" name="personalNumber"
+										class="form-control" placeholder="הכנס מספר אישי">
+							</div>
+                            <div class="form-group form-inline">
+								<label class="control-label" for="courseNumber">מספר
+									קורס:</label>
+									<input id="courNum" type="text" name="courseNumber"
+										class="form-control" placeholder="הכנס מספר קורס">
+							</div>
+							<br>
+							<div class="form-group  form-inline">
+
+									<button type="submit" class="btn"
+										onclick="inputData()">הכנס</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="col-md-12">
+					<div class="container col-md-4 pull-right">
+						<h4 class="text-info">הכנס את הציונים שנתנו ע״י החיילים:</h4>
+						<div class="form-inline" action="">
+
+							<div class="form-group  form-inline">
+								<label class="control-label" for="personalNumber">מספר
+									אישי:</label>
+									<input id="perNum" type="text" name="personalNumber"
+										class="form-control" placeholder="הכנס מספר אישי">
+							</div>
+
+							<div class="form-group form-inline">
+								<label class="control-label" for="grade">ציון:</label>
+                                <span style="display:inline-block; width: 40px;"></span>
+									<input id="grade" type="text" name="grade" class="form-control"
+										placeholder="הכנס ציון">
+							</div>
+							<br>
+							<div class="form-group form-inline">
+									<button type="submit" onclick="addGrade()"
+										class="btn pull-right" onclick="inputData()">הכנס ציון</button>
+							</div>
+							<br>
+							<div class="form-group form-inline">
+									<button type="submit" class="btn pull-right"
+										onclick="newGrade()">הוסף ציון</button>
+									<button type="submit" class="btn pull-right"
+										onclick="calcGrade()">שקלל ציון</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<p class="info" id="calculation"></p>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
