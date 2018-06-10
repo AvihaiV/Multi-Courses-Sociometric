@@ -12,6 +12,8 @@ h3 {
 
 th, td {
 	text-align: center;
+	padding:5px !important;
+	
 }
 
 #title {
@@ -21,10 +23,15 @@ th, td {
 }
 
 
-table tr:first-child {
-	background: #77773c;
+#table tr:first-child {
 	font-weight:bold;
+	margin-top:5px;
 }
+
+#table {
+	margin-top:5px;
+}
+
 #nav-bar {
 	background: #CFCF60;
 	margin-bottom: 25px;
@@ -80,4 +87,10 @@ table tr:first-child {
     from { opacity: 1.0; }
     to   { opacity: 0.0; }
 }
+.list-group-item {
+    padding: 3px 10px
+}
 
+.panel-heading, .panel-body{
+    padding: 5px 10px
+}
