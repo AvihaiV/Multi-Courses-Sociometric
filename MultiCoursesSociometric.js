@@ -251,8 +251,7 @@ function getSoldierData(filters){
 		}else{
 			// Empty the output table
 			//document.getElementById("outputTable").innerHTML=""
-			// Please write your own alert here.
-			alert('No data available for the applied filters!');
+			alert('לא קיימים נתונים עבור סינון זה');
 		}
 
 	}).catch(function (error) {
