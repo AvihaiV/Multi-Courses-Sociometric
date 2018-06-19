@@ -148,8 +148,6 @@ function OpGetOverallAvg(nodeLabel,RelLabel,id){
 		}else{
 			// Empty the output table
 			//document.getElementById("outputTable").innerHTML=""
-			// Please write your own alert here.
-			//alert('No data available for the applied filters!');
 			console.log('לא קיימים נתונים לפי סינון זה!');
 		}
 		//console.log("SUCCESS");
