@@ -9,7 +9,6 @@ function getSoldierDataForCourses(id,element_id,nodeLabel,relLabel){
 	session.run(query).then( function (result) {
 		// Close the neo4j session
 		result.records.forEach(function (record) {
-			//console.log( record.get('name'), ":", record.get('grade'),":", record.get('course') );
 			var obj={};
 			obj['course']=record.get('course')
 			obj['avg_grade']=Math.round(record.get('avg_grade') * 100) / 100;
@@ -26,8 +25,6 @@ function getSoldierDataForCourses(id,element_id,nodeLabel,relLabel){
 			drawCourseAvgForSoldierTable(response,element_id);
 		}else{
 			// Empty the output table
-			//document.getElementById("outputTable").innerHTML=""
-			// Please write your own alert here.
 			alert('לא קיימים נתונים עבור חייל זה!');
 		}
 		console.log("SUCCESS");
@@ -56,7 +53,8 @@ function drawCourseAvgForSoldierTable(data,element_id) {
 //Function to draw row
 function drawCourseAvgForSoldierRow(rowData,element_id) {
     var row = $("<tr />")
-    $("#"+element_id).append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    //this will append tr element to table... keep its reference for a while since we will add cels into it
+    $("#"+element_id).append(row);
     row.append($("<td>" + rowData.course+ "</td>"));
     row.append($("<td>" + rowData.avg_grade + "</td>"));
 }
@@ -72,7 +70,6 @@ function getCourseDataForSoldiers(id,html_element,nodeLabel,relLabel){
 	session.run(query).then( function (result) {
 		// Close the neo4j session
 		result.records.forEach(function (record) {
-			//console.log( record.get('name'), ":", record.get('grade'),":", record.get('course') );
 			var obj={};
 			obj['soldier_id']=record.get('soldier_id')
 			obj['avg_grade']=Math.round(record.get('avg_grade') * 100) / 100;
@@ -88,10 +85,8 @@ function getCourseDataForSoldiers(id,html_element,nodeLabel,relLabel){
 		if(response.length > 0){
 			drawAvgForCourseTable(response,html_element);
 		}else{
-			// Please write your own alert here.
 			alert('לא קיימים נתונים עבור קורס זה!');
 		}
-		//console.log("SUCCESS");
 
 	}).catch(function (error) {
 		console.log(error);
@@ -117,7 +112,8 @@ function drawAvgForCourseTable(data,html_element) {
 // Function to draw row
 function drawAvgForCourseRow(rowData,html_element) {
     var row = $("<tr />")
-    $("#"+html_element).append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    //this will append tr element to table... keep its reference for a while since we will add cels into it
+    $("#"+html_element).append(row);
     row.append($("<td>" + rowData.soldier_id+ "</td>"));
     row.append($("<td>" + rowData.avg_grade + "</td>"));
 }
@@ -146,13 +142,10 @@ function OpGetOverallAvg(nodeLabel,RelLabel,id){
 		if(response.length > 0){
 			drawAvgTable(response,id);
 		}else{
-			// Empty the output table
-			//document.getElementById("outputTable").innerHTML=""
+
 			console.log('לא קיימים נתונים לפי סינון זה!');
 		}
-		//console.log("SUCCESS");
-        //var time = result.summary.resultAvailableAfter.low + result.summary.resultConsumedAfter.low;
-       // alert("הנתונים נבדקו ב- "+time+" מילי-שניות");
+
 	}).catch(function (error) {
 		console.log(error);
 	});
@@ -177,7 +170,8 @@ function drawAvgTable(data,id) {
 // Function to draw row
 function drawAvgRow(rowData,id) {
     var row = $("<tr />")
-    $("#"+id).append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    //this will append tr element to table... keep its reference for a while since we will add cels into it
+    $("#"+id).append(row);
     row.append($("<td>" + rowData.soldier_id + "</td>"));
     row.append($("<td>" + rowData.avg_grade + "</td>"));
 }
@@ -247,12 +241,13 @@ function setTime(queryTime){
 	for( var i in queryTime){
 		totalTime += queryTime[i];
 	}
-	//console.log(queryTime);
+
 	console.log("Total Time: "+totalTime);
 
 	$("#performanceResult").addClass("table");
     var row = $("<tr />")
-    $("#performanceResult").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    //this will append tr element to table... keep its reference for a while since we will add cels into it
+    $("#performanceResult").append(row);
     row.append($("<td> זמן כולל במילי-שניות :</td>"));
     row.append($("<td>" + totalTime + "</td>"));
 }

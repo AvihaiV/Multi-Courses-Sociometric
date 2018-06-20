@@ -87,7 +87,6 @@ function getAllCourses(){
 
 		// Iterate over all the records
 		result.records.forEach(function (record) {
-			//console.log('Course Id:',record.get('course_id'));
 			$("#courseList").append('  <a class="list-group-item list-group-item-info">'+record.get('course_id')+'</a>');
 		});
 
@@ -107,7 +106,6 @@ function OpGetAllCourses(){
 
 		// Iterate over all the records
 		result.records.forEach(function (record) {
-			//console.log('Course Id:',record.get('course_id'));
 			$("#OpCourseList").append('  <a class="list-group-item list-group-item-info">'+record.get('course_id')+'</a>');
 		});
 
@@ -127,7 +125,6 @@ function getAllSoldiers(){
 
 		// Iterate over all the records
 		result.records.forEach(function (record) {
-			//console.log('Course Id:',record.get('course_id'));
 			$("#soldierList").append('  <a class="list-group-item list-group-item-info">'+record.get('soldier_id')+'</a>');
 		});
 
@@ -143,13 +140,11 @@ function OpGetAllSoldiers(){
 	session.run(query).then( function (result) {
 
 		// Empty previous table
-		//document.getElementById("OpSoldierList").innerHTML="";
 		$("#OpSoldierList").html('');
 		$("#OpSoldierList").append('<a href="#" class="list-group-item list-group-item-success">מספר אישי</a>');
 
 		// Iterate over all the records
 		result.records.forEach(function (record) {
-			//console.log('Course Id:',record.get('course_id'));
 			$("#OpSoldierList").append('  <a class="list-group-item list-group-item-info">'+record.get('soldier_id')+'</a>');
 		});
 
@@ -165,7 +160,7 @@ function addSoldier(soldier){
 
 	// Run query using session
 	session.run(query,soldier).then( function (result) {
-		// log success message
+		// success message
 		console.log("Success")
 	}).catch(function (error) {
 		console.log(error);
@@ -179,7 +174,7 @@ function addCourse(course){
 
 	// Run query using session
 	session.run(query,course).then( function (result) {
-		// log success message
+		// success message
 		console.log("Success")
 
 	}).catch(function (error) {
@@ -233,7 +228,6 @@ function getSoldierData(filters){
 	session.run(query,filters).then( function (result) {
 
 		result.records.forEach(function (record) {
-			//console.log( record.get('name'), ":", record.get('grade'),":", record.get('course') );
 			var obj={};
 			obj['name']=record.get('id')
 			obj['graded_by']=record.get('graded_by')
@@ -249,8 +243,6 @@ function getSoldierData(filters){
 		if(response.length > 0){
 			drawTable(response);
 		}else{
-			// Empty the output table
-			//document.getElementById("outputTable").innerHTML=""
 			alert('לא קיימים נתונים עבור סינון זה');
 		}
 
@@ -280,7 +272,8 @@ function drawTable(data) {
 // Function to draw row
 function drawRow(rowData) {
     var row = $("<tr />")
-    $("#outputTable").append(row); //this will append tr element to table... keep its reference for a while since we will add cels into it
+    //this will append tr element to table... keep its reference for a while since we will add cels into it
+    $("#outputTable").append(row);
     row.append($("<td>" + rowData.name + "</td>"));
     row.append($("<td>" + rowData.graded_by + "</td>"));
     row.append($("<td>" + rowData.course + "</td>"));
@@ -329,7 +322,6 @@ function addGrade(){
 	var grade = grades[i]
     i++;
 
-    //alert(sum);
 
 	// Soldier to whom grade is given
 	var to = parseInt(document.getElementById("personalNum").value);
@@ -355,7 +347,6 @@ function outputData() {
 	var personalNum = parseInt(document.getElementById("perNumOut").value);
 	var courNum = parseInt(document.getElementById("courNumOut").value);
 	var grade =  parseInt(document.getElementById("mySelect").value)
-    //alert ("hello")
 	// create filters object
 	var filters={
 		'id':personalNum,
@@ -420,7 +411,7 @@ function getCourseAvgForSoldier(page){
 
 function updateStatistics(){
 
-	// Get All Soldiers Count
+	// Get All Course Count
 	getCourseCount();
 
 	// Get All Soldiers Count
@@ -485,7 +476,7 @@ function emptyDatabase(){
 //Function Call To Display Test Data Statistics at initial load
 updateStatistics();
 
-//Function Call To Display Test Data Statistics at initial load
+//Function Call To Display Data Statistics at initial load
 OpUpdateStatistics();
 
 //========================================================================================
