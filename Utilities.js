@@ -1,3 +1,5 @@
+//Utilities is the JS for all the function that needs to be run on input data
+
 // Function to get soldier data based on filter
 function getSoldierDataForCourses(id,element_id,nodeLabel,relLabel){
 	var response=[];
